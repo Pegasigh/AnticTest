@@ -11,6 +11,7 @@ public class S_Menu : MonoBehaviour
     public TextMeshProUGUI musicButtonText;
     public TMP_Dropdown colorCountDropdown;
     public TextMeshProUGUI startButtonText;
+    public GameObject gui;
 
     private void Start()
     {
@@ -34,6 +35,8 @@ public class S_Menu : MonoBehaviour
     {
         gameObject.GetComponent<Canvas>().enabled = false;
 
+        gui.GetComponent<Canvas>().enabled = true;
+
         colorCountDropdown.interactable = false;
 
         startButtonText.text = "Continue";
@@ -53,6 +56,7 @@ public class S_Menu : MonoBehaviour
 
     public void OpenMenu()
     {
+        gui.GetComponent<Canvas>().enabled = false;
         gameObject.GetComponent<Canvas>().enabled = true;
     }
 }

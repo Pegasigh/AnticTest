@@ -31,10 +31,11 @@ public class S_EndGameUI : MonoBehaviour
             statusText.text = "Victory";
             scoreText.text = "You earned " + points.ToString() + " points in " + movesUsed.ToString() + " turns";
 
+
             //first star - 0 points or less
             star1.SetActive(true);
-            //second star - points are less than (or equal) half goal balls
-            if (points <= goalBallsStarting/2) star2.SetActive(true);
+            //second star - positive points
+            if (points >= 0) star2.SetActive(true);
             //third star - only hit all goal balls
             if (points == goalBallsStarting) star3.SetActive(true);
 
@@ -44,20 +45,5 @@ public class S_EndGameUI : MonoBehaviour
             statusText.text = "Game Over";
             scoreText.text = "You missed " + goalBallsLeft.ToString() + " balls";
         }
-
-        
-
-
-        //first star
-        if (points >= 0) star1.SetActive(true);
-        else star1.SetActive(false);
-
-        //second star
-        if (points >= goalBallsStarting / 2) star2.SetActive(true);
-        else star2.SetActive(false);
-
-        //third star
-        if (points >= goalBallsStarting) star3.SetActive(true);
-        else star3.SetActive(false);
     }
 }

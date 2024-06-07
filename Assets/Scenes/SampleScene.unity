@@ -2150,6 +2150,7 @@ MonoBehaviour:
   musicButtonText: {fileID: 1795462646}
   colorCountDropdown: {fileID: 1902258320}
   startButtonText: {fileID: 193873998}
+  gui: {fileID: 1648392357}
 --- !u!1 &933458862
 GameObject:
   m_ObjectHideFlags: 0
@@ -3390,7 +3391,7 @@ MonoBehaviour:
   score: 0
   moves: 0
   totalMoves: 10
-  goalBallsStarting: 11
+  goalBallsStarting: 3
   goalBallsLeft: 0
   balls: []
   fieldPlane: {fileID: 1619819316}
@@ -3723,7 +3724,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4221,7 +4222,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648392357}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}

@@ -35,7 +35,6 @@ public class S_GameManager : MonoBehaviour
     {
         radius = ballPrefab.transform.localScale.x / 2;
         moves = totalMoves;
-        goalBallsLeft = goalBallsStarting;
 
         ballColors = new Color[] {
         Color.black,
@@ -94,6 +93,7 @@ public class S_GameManager : MonoBehaviour
     {
         //number of goalballs can never exceed number of moves. This would make the game impossible to beat
         goalBallsStarting = Mathf.Min(totalMoves, goalBallsStarting);
+        goalBallsLeft = goalBallsStarting;
 
         for (int i = 0; i < numberOfBalls; i++)
         {
